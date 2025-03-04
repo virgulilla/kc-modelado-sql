@@ -6,6 +6,25 @@ Este proyecto consiste en el modelado de una base de datos SQL. A continuación,
 
 ![Diagrama de Entidad-Relación](diagrama.png)
 
+## Diagrama alternativo
+
+![Diagrama de Entidad-Relación](alternativa.png)
+
+En este diagrama alternativo, se introduce una tabla intermedia CopiaPelicula para gestionar de manera más precisa el estado de cada copia individual de una película.
+
+### Ventajas de este enfoque:
+
+- Permite registrar qué copia específica ha sido alquilada por un socio.
+- El campo estado en CopiaPelicula brinda mayor control sobre cada copia, pudiendo indicar si está disponible, alquilada, rota, perdida, entre otros estados.
+- Facilita el seguimiento detallado del inventario y la gestión de copias dañadas o extraviadas.
+
+### Diferencias clave con el modelo original:
+
+- Se modifica la tabla Alquiler para referenciar directamente una copia específica de una película en lugar de la película en general.
+- Se refuerza la relación entre Pelicula y CopiaPelicula, permitiendo un control más granular sobre la disponibilidad de cada copia.
+
+Este modelo requiere una actualización tanto en la tabla Alquiler como en CopiaPelicula, pero ofrece una mayor flexibilidad y precisión en la gestión de los alquileres y el estado de cada copia en el videoclub.
+
 ## Descripción del Proyecto
 
 El objetivo de este proyecto es diseñar y crear una base de datos que cumpla con los siguientes requisitos: 
