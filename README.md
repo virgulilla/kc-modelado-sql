@@ -23,7 +23,7 @@ número de copias disponibles
 
 ## Diagrama de Entidad-Relación
 
-![Diagrama de Entidad-Relación](diagrama.png)
+![Diagrama de Entidad-Relación](diagrama_entidades.png)
 
 ## Licencia
 
